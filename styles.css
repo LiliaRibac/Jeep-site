@@ -1,0 +1,180 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+}
+.navbar {
+    display: flex;
+    background-color:black;
+    /* justify-content: space-between; */
+  
+    width:100vw;
+}
+
+.navbar a:hover {
+    background-color:grey 
+ }
+
+.nav-menu{
+   display: flex;
+   transition:all, 0.6s;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+div, a{
+    display: inline-block;
+    font-size: 12px;
+    
+    font-weight:bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:white;
+    flex:1;
+    padding:0px;
+    min-width:55px;
+}
+
+.nav-link{
+    padding: 20px 10px;
+   
+}
+
+div a i{
+    padding-left:5px;
+    
+}
+.right-icon{
+    color:grey;
+}
+
+.jeep-slide-one{
+    background-image: url("https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/bhp/hero/adaptive-hero/Jeep_MotorTrend2018_Wrangler_BHP_Desktop_V2.jpg.image.1440.jpg");
+    background-size:cover;
+    background-position:center;
+    width: 100%;
+
+    
+}
+
+
+
+/* Mobile View */
+
+@media only screen and (max-width:426px) {
+    .logo-cont{
+        flex:2;
+        padding-left: 15px;
+    }
+    .logo{
+       height:25px;
+       justify-self: flex-start;
+       
+       /* display: block; */
+    }
+
+    .navlink-hide{
+        display:none;
+    }
+    .hidelink-mobile-tablet{
+        display:none;
+    }
+
+    .jeep-slide-one{
+        height:89vh;
+        
+        
+    }
+}
+/* End Mobile View */
+
+/* Tablet View */
+@media only screen and (min-width: 426px) and (max-width:768px) {
+    .nav-link{
+        padding: 20px 10px;
+    }
+    div a i{
+        padding-left:5px;
+    }
+    
+    .logo-cont{
+        flex:2;
+        padding-left: 15px;
+    }
+    .logo{
+       height:25px;
+       justify-self: flex-start;
+       
+       /* display: block; */ 
+    }
+    .navlink-hide{
+        display:block;
+    }
+    .hidelink-mobile-tablet{
+        display:none;
+    }
+}
+
+/* End Tablet View */
+
+
+/* Lg Tablet */
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+    .logo-cont{
+        flex:1;
+        padding-left: 15px;
+    }
+    .logo{
+       height:35px;
+       justify-self: flex-start;
+       
+       /* display: block; */ 
+    }
+}
+
+/* End Lg Tablet */
+
+/* Desktop View */
+
+@media only screen and (min-width: 1024px) {
+    .logo-cont{
+        padding-left: 15px;
+    }
+
+    .logo{
+        height:30px;
+        justify-self: flex-start;
+    }
+
+    .hidelink-desktop{
+        display:none;
+    }
+
+    .right-nav{
+        display:flex;
+        justify-content:flex-end;
+        margin-left:80px;
+        flex:4;
+    }
+
+    .right-nav div{
+        flex:none;
+        padding-right:30px;
+    }
+
+    .nav-menu a{
+        flex:none;
+        font-size:10px;
+    }
+
+    .nav-menu{
+        width:100%;
+        display:flex;
+        justify-content:space-between;
+
+    }
+
+}
+
+/* End Desktop View */
