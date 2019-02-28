@@ -95,7 +95,102 @@ font-weight: initial;
     padding-top: 10px;
     text-transform: none;
 }
+.jeep-slide-one{
+    background-image: url("jeep-slide-mobile.jpg");
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 86vh;
+    background-size: cover;
+    background-position: bottom center;
+    padding-top: 25px;
+} 
 
+.button{
+    background-color: rgb(255,186,0);
+    padding: 20px 20px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: .14rem;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: inherit;
+    position: relative;
+    text-transform: uppercase;
+    transition-duration: 250ms;
+    margin-top: 10px;
+
+}
+
+.button::after{
+ font-family: 'Font Awesome 5 Free';
+ content: ' \f054';
+ margin-left: 6px;
+ font-size: 12px;
+
+}
+
+/* Done FIRST CONT  */
+.second-container{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+.title{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-align: center;
+   min-width: 100vw;
+}
+
+
+.Jeeps-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    width:100vw;
+}
+
+.flex-item{
+    flex:1;
+    text-align:center;
+}
+
+.flex-item .sub-header{
+    color:black;
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size: 15px;
+  
+}
+
+.flex-item .small-text{
+    color:grey;
+    font-weight:lighter;
+    font-size:8px;
+    padding-top:8px;
+}
+
+.flex-item .price{
+    color:black;
+    font-weight:bold;
+    font-size:15px;
+}
+ .sub-header-new{
+    color:black;
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size: 16px;
+   /*  */
+   
+
+}
 /* Mobile View */
 
 /*@media only screen and (max-width:426px)*/
@@ -123,33 +218,8 @@ font-weight: initial;
         background-position: bottom center;
         padding-top: 25px;
     } 
-   .button{
-       background-color: rgb(255,186,0);
-       padding: 20px 20px;
-       color: black;
-       text-align: center;
-       text-decoration: none;
+   
 
-       border-radius: .14rem;
-       cursor: pointer;
-       display: inline-block;
-       font-family: "Proxima Nova";
-       font-size: 14px;
-       font-weight: inherit;
-       position: relative;
-       text-transform: uppercase;
-       transition-duration: 250ms;
-       margin-top: 10px;
-
-   }
-
-   .button::after{
-    font-family: 'Font Awesome 5 Free';
-    content: ' \f054';
-    margin-left: 6px;
-    font-size: 12px;
- 
-   }
 }
 /* End Mobile View */
 
@@ -182,6 +252,7 @@ font-weight: initial;
         height: 47.5vh;
         background-size: contain
     } 
+
 }
 
 /* End Tablet View */
