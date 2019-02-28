@@ -52,10 +52,9 @@ div a i{
 
 .jeep-slide-one{
     width: 100%; 
-    position: absolute;
-    top: 54px;
-    height: 100vh;
-    background-position: contain;
+    position: relative;
+    height: 70vh;
+    background-size: contain;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -107,10 +106,11 @@ width: 237px;
     .jeep-slide-one{
         background-image: url("jeep-slide-mobile.jpg");
         width: 100%;
-        position: absolute;
-        top: 54px;
+        position: relative;
+        background-repeat: no-repeat;
         height: 68vh;
         background-size: cover;
+        background-position: bottom center;
     } 
     h1{
         text-align: center;
