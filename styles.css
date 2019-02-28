@@ -78,14 +78,24 @@ div a i{
 .Motortrend-top-text{
 line-height: 23px;
 text-align: center;
-font-size: 16px;
+font-size: 14px;
 font-family: Roboto;
-width: 237px;
+
+text-transform: none;
+
+margin: 0px auto;
+padding: 7px 20px 0px 20px;
+font-weight: initial;
+
 }
 .pricese{
     text-align: center;
-    font-size:9px;
+    font-size:11px;
+    font-weight: initial;
+    padding-top: 10px;
+    text-transform: none;
 }
+
 /* Mobile View */
 
 /*@media only screen and (max-width:426px)*/
@@ -108,16 +118,38 @@ width: 237px;
         width: 100%;
         position: relative;
         background-repeat: no-repeat;
-        height: 68vh;
+        height: 86vh;
         background-size: cover;
         background-position: bottom center;
+        padding-top: 25px;
     } 
-    h1{
-        text-align: center;
-        font-family: 'Courier New', Courier, monospace;
-        
-    }
+   .button{
+       background-color: rgb(255,186,0);
+       padding: 20px 20px;
+       color: black;
+       text-align: center;
+       text-decoration: none;
 
+       border-radius: .14rem;
+       cursor: pointer;
+       display: inline-block;
+       font-family: "Proxima Nova";
+       font-size: 14px;
+       font-weight: inherit;
+       position: relative;
+       text-transform: uppercase;
+       transition-duration: 250ms;
+       margin-top: 10px;
+
+   }
+
+   .button::after{
+    font-family: 'Font Awesome 5 Free';
+    content: ' \f054';
+    margin-left: 6px;
+    font-size: 12px;
+ 
+   }
 }
 /* End Mobile View */
 
