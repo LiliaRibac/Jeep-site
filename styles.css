@@ -20,20 +20,21 @@ html, body{
    transition:all, 0.6s;
    justify-content: space-between;
    align-items: center;
-
+   height: 55px;
+   width: 100%;
 }
 
 div, a{
     display: inline-block;
     font-size: 12px;
-    
-    font-weight:bold;
+    font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-    color:white;
-    flex:1;
-    padding:0px;
-    min-width:55px;
+    color: white;
+    /* flex: 1; */
+    line-height: 0px;
+    padding: 0px;
+    /* min-width: 55px; */
 }
 
 .nav-link{
@@ -50,29 +51,51 @@ div a i{
 }
 
 .jeep-slide-one{
-    background-image: url("https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/bhp/hero/adaptive-hero/Jeep_MotorTrend2018_Wrangler_BHP_Desktop_V2.jpg.image.1440.jpg");
-    background-size:cover;
-    background-position:center;
-    width: 100%;
+    width: 100%; 
+    position: absolute;
+    top: 54px;
+    height: 100vh;
+    background-position: contain;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} 
 
-    
-}
 
-
-
-/* Mobile View */
-
-@media only screen and (max-width:426px) {
-    .logo-cont{
-        flex:2;
-        padding-left: 15px;
-    }
     .logo{
        height:25px;
        justify-self: flex-start;
        
        /* display: block; */
     }
+.logo-small{
+   width: 170px;
+   height: 90px;
+   display: inline-block;
+   background-attachment: fixed;
+  position: absolute;
+}
+
+.Motortrend-top-text{
+line-height: 23px;
+text-align: center;
+font-size: 16px;
+font-family: Roboto;
+width: 237px;
+}
+.pricese{
+    text-align: center;
+    font-size:9px;
+}
+/* Mobile View */
+
+/*@media only screen and (max-width:426px)*/
+@media(min-width:0px) and (max-width:426px) {
+    .logo-cont{
+        flex:2;
+        padding-left: 15px;
+    }
+    
 
     .navlink-hide{
         display:none;
@@ -82,15 +105,24 @@ div a i{
     }
 
     .jeep-slide-one{
-        height:89vh;
-        
+        background-image: url("jeep-slide-mobile.jpg");
+        width: 100%;
+        position: absolute;
+        top: 54px;
+        height: 68vh;
+        background-size: cover;
+    } 
+    h1{
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
         
     }
+
 }
 /* End Mobile View */
 
 /* Tablet View */
-@media only screen and (min-width: 426px) and (max-width:768px) {
+@media only screen and (min-width: 427px) and (max-width:768px) {
     .nav-link{
         padding: 20px 10px;
     }
@@ -102,18 +134,22 @@ div a i{
         flex:2;
         padding-left: 15px;
     }
-    .logo{
-       height:25px;
-       justify-self: flex-start;
-       
-       /* display: block; */ 
-    }
+    
     .navlink-hide{
         display:block;
     }
     .hidelink-mobile-tablet{
         display:none;
     }
+
+    .jeep-slide-one{
+        background-image: url("jeep-slide-mobile-two.jpg");
+        width: 100%;
+        position: absolute;
+        top: 54px;
+        height: 47.5vh;
+        background-size: contain
+    } 
 }
 
 /* End Tablet View */
@@ -125,19 +161,24 @@ div a i{
         flex:1;
         padding-left: 15px;
     }
-    .logo{
-       height:35px;
-       justify-self: flex-start;
-       
-       /* display: block; */ 
-    }
+   
+
+    .jeep-slide-one{
+        background-image: url("jeep-slide-mobile-two.jpg");
+        width: 100%;
+        position: absolute;
+        top: 54px;
+        height: 47.5vh;
+        background-size: contain
+    } 
+
 }
 
 /* End Lg Tablet */
 
 /* Desktop View */
 
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) {
     .logo-cont{
         padding-left: 15px;
     }
@@ -175,6 +216,13 @@ div a i{
 
     }
 
-}
+    .mobile-slide-two {
+        display: none;
+    }
+
+    .mobile-slide {
+        display: none;
+    }
+} */
 
 /* End Desktop View */
