@@ -106,7 +106,7 @@ font-weight: initial;
 
 .button{
     background-color: rgb(255,186,0);
-    padding: 20px 20px;
+    padding: 12px 20px;
     color: black;
     text-align: center;
     text-decoration: none;
@@ -204,17 +204,19 @@ font-weight: initial;
        /* height: 100vh; */
       /* margin: 10px 20px 10px 20px; */
      object-position: center;
+     margin-bottom: 10px;
    }
 .inf0-jeep{
     text-align: left;
-    padding-left: 25px;
+    padding-left: 20px;
 }
 .grey-info{
     /* display: flex; */
     width: 100%;
     background-color: #212121;
     text-align: right;
-    padding: 5px 0px; 
+    padding: 5px 0px;
+    margin-top: 40px; 
    }
    .grey-info::after{
     font-family: 'Font Awesome 5 Free';
@@ -224,6 +226,19 @@ font-weight: initial;
     color: #ffba00;
 
    }
+   .fourth-container{
+    background-color: #e7e7e7;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 60px;
+   }
+   .inf0-jeep1{
+    text-align: left;
+    color: black;
+   }
+
+  
 
 /* Mobile View */
 
