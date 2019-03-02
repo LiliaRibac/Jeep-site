@@ -313,7 +313,7 @@ margin-top: 10px;
  
    #globe::before {
         content: "\f57d";
-        margin-left: 46px;
+        margin-left: 56px;
     } 
     /* search */
     .search-info{
@@ -345,6 +345,9 @@ margin-top: 10px;
     content: "\f002";
     font-size: 20px;
     color:black;
+    /* position:absolute; */
+    display: inline-block;
+    transform: rotate(360deg) scaleX(-1);
 }
 
 
