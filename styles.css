@@ -2,6 +2,8 @@ html, body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif; 
+ 
+   
 }
 *, *::before, ::after {
     box-sizing: inherit;
@@ -11,6 +13,7 @@ html, body{
     overflow: hidden;
     padding: 0px;
     margin: 0px;
+   
 }
 .navbar {
     display: flex;
@@ -33,18 +36,17 @@ html, body{
    width: 100%;
 }
 
-div, a{
-    display: inline-block;
+ div, a{
+     margin: 0px;
+    padding: 0px;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     color: white;
-    /* flex: 1; */
-    /* line-height: 0px; */
-    padding: 0px;
-    /* min-width: 55px; */
-}
+} 
+    
+ 
 
 .nav-link{
     padding: 20px 10px;
@@ -59,63 +61,60 @@ div a i{
     color:grey;
 }
 
+/* .logo-small{
+    width: 170px;
+    height: 90px;
+    display: inline-block;
+    background-attachment: fixed;
+   position: absolute;
+ } */
+ .logo{
+    height:35px;
+    justify-self: flex-start;
+}   
+
 .jeep-slide-one{
     width: 100%; 
     position: relative;
-    height: 70vh;
-    background-size: contain;
+    /* height: 100vh; */
+    /* background-size: contain; */
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: column;
+    /* display: inline-block; */
+    
+} 
+.Jeep-freedom-days{
+    /* margin-top: 15px; */
+    height: 40px;
+    
 } 
 
-
-.logo{
-       height:25px;
-       justify-self: flex-start;
-       
-       /* display: block; */
-    }
-.logo-small{
-   width: 170px;
-   height: 90px;
-   display: inline-block;
-   background-attachment: fixed;
-  position: absolute;
-}
-
-.Motortrend-top-text{
-line-height: 23px;
-text-align: center;
-font-size: 14px;
-font-family: Roboto;
-text-transform: none;
-margin: 0px auto;
-padding: 7px 20px 0px 20px;
-font-weight: initial;
+.hero-panel{
+    background-color:rgba(0,0,0,.5);
+    position: absolute;
+    padding: 15px;
+    margin:0px 50px;
+   
+   /* position: inherit; */
+   
 
 }
-.pricese{
-    text-align: center;
-    font-size:11px;
-    font-weight: initial;
-    padding-top: 10px;
-    text-transform: none;
-}
+
 .jeep-slide-one{
-    background-image: url("jeep-slide-mobile.jpg");
-    width: 100%;
+    background-image: url("Mobile.jpg.image.1000.jpg");
+    /* width: 100%; */
     position: relative;
     background-repeat: no-repeat;
-    height: 86vh;
+    height: 100vh;
     background-size: cover;
     background-position: bottom center;
-    padding-top: 25px;
+    /* padding-top: 25px; */
 } 
 
 .button{
     background-color: rgb(255,186,0);
-    padding: 12px 20px;
+    padding: 12px 23px;
     color: black;
     text-align: center;
     text-decoration: none;
@@ -138,7 +137,7 @@ font-weight: initial;
  margin-left: 6px;
  font-size: 12px;
 
-}
+}  
 
 /* Done FIRST CONT  */
 .second-container{
@@ -163,38 +162,47 @@ font-weight: initial;
 .flex-item{
     flex:1;
     text-align:center;
+    
 }
 .flex-item .sub-header{
     color:black;
     font-weight:bold;
     text-transform:uppercase;
     font-size: 15px;
+    /* line-height: 18px; */
+   
+  }
   
-}
+  
 .flex-item .small-text{
     color:grey;
     font-weight:lighter;
     font-size:8px;
-    padding-top:8px;
+    /* padding-top:8px; */
+    /* line-height: 3px; */
 }
 .flex-item .price{
     color:black;
     font-weight:bold;
     font-size:15px;
+    line-height: 1px;
+    
 }
  .sub-header-new{
     color:black;
     font-weight:bold;
     text-transform:uppercase;
     font-size: 16px;
-   /*  */
+    line-height: 1.3px;
+   
+  
    }
 .third-container{
     background-color: #d1d1d1;
     display: flex;
     flex-direction: column;
     padding: 20px 20px;
-    /* width: 100%; */
+    width: 100%;
 }
 .flex-item3{
        display: flex;
@@ -202,6 +210,7 @@ font-weight: initial;
        background-color: black;
        margin-bottom: 25px;
    }
+ 
 .big-jeep{
        width: 100%;
        /* height: 100vh; */
@@ -216,7 +225,7 @@ font-weight: initial;
 .grey-info{
     /* display: flex; */
     width: 100%;
-    background-color: #212121;
+    background-color:#212121;
     text-align: right;
     padding: 5px 0px;
     margin-top: 40px; 
@@ -234,7 +243,7 @@ font-weight: initial;
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 20px 60px;
+    padding: 20px 20px;
    }
    .inf0-jeep1{
     text-align: left;
@@ -243,8 +252,8 @@ font-weight: initial;
    .fifth-container{
        background-color: #d1d1d1;
        /* display: flex; */
-       /* width: 100%; */
-       padding: 45px 30px;
+       width: 100%;
+       padding: 45px 20px;
        justify-content: center;
        text-align: center;
    }
@@ -256,6 +265,7 @@ h1{
 }
 .info-blue-book{
     font-weight: normal;
+    color: white;
 }
      
 .button3{
@@ -272,7 +282,6 @@ font-family: "Proxima Nova";
 font-size: 15px;
 font-weight: inherit;
 position: relative;
-
 text-transform: uppercase;
 transition-duration: 250ms;
 margin-top: 10px;
@@ -295,17 +304,19 @@ margin-top: 10px;
       width: 100%;
   }
 .info-about-us{
-    
     display: flex;
     flex-wrap:wrap;
-    align-items:center;
+ 
 }
 .about-us{
     min-width: 50%;
     margin: 10px 0px;
-    color:grey;
+    color: #bfbfbf;
+    align-items:center;
+    
+   }
+
    
-}
 
 #globe{
     margin-right:10px;
@@ -315,7 +326,7 @@ margin-top: 10px;
         content: "\f57d";
         margin-left: 56px;
     } 
-    /* search */
+    
     .search-info{
         display: flex;
         width: 87%;
@@ -349,28 +360,105 @@ margin-top: 10px;
     display: inline-block;
     transform: rotate(360deg) scaleX(-1);
 }
+.footer{
+    background-color: black;
+    color: white;
+    padding: 40px 25px;
+    width: 100%
+   
+}
+#all-about-us{
+    display: block;
+    
+    
+}
 
+.all-about-us{
+    /* display: flex; */
+    /* flex-wrap:wrap; */
+    align-items:center;
+    font-size: 12px;
+    padding: 15px 0px;
+    border-bottom: 1px solid white;
+    /* font-weight: 700; */
+    width: 100%;
 
+}
+.all-about-us::after{
+    font-family: 'Font Awesome 5 Free';
+    content: ' \f078';
+    float: right;
+    font-size: 16px;
+    padding:0 25px;
+  
 
+}
+.fallow{
+    display: flex;
+    padding: 30px 0px;
+    font-size: 10px;
+    font-weight: 700;
+}
 
+#icon{
+flex:1;
+} 
 
+.icons{
+    margin:20px 0.2px;
+    font-size:30px;
+    letter-spacing: 2px;
+}
 
+.support{
+    flex:1;
+    /* display: inline; */
+}
+   
 
-
-
+.unconnect{
+    padding: 20px 0px;
+}
+hr{
+    border-color:grey;
+    margin: 0px;
+    padding: 0px;
+}
+span{
+    /* margin: .2px; */
+    font-size: 0.1px;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	
+}
+.footer-paragraph{
+    color:#bfbfbf;
+    margin:15px 0px;
+    font-size: 10px;
+    /* font-family: "Roboto" sans-serif;
+    font-weight: initial; */
+    line-height: 1.5;
+    text-align: left;
+}
+.types-of-car{
+   
+    margin:30px 0px; 
+    word-spacing: 4px;
+    display: flex;
+}
 
     
 /* Mobile View */
 
-/*@media only screen and (max-width:426px)*/
-@media(min-width:0px) and (max-width:426px) {
+
+@media(min-width:0px) and (max-width:767px) 
+{
     .logo-cont{
         flex:2;
         padding-left: 15px;
     }
-    
-
-    .navlink-hide{
+        .navlink-hide{
         display:none;
     }
     .hidelink-mobile-tablet{
@@ -378,22 +466,31 @@ margin-top: 10px;
     }
 
     .jeep-slide-one{
-        background-image: url("jeep-slide-mobile.jpg");
+        background-image: url("Mobile.jpg.image.1000.jpg");
         width: 100%;
         position: relative;
         background-repeat: no-repeat;
-        height: 86vh;
+        height:100vh;
         background-size: cover;
         background-position: bottom center;
         padding-top: 25px;
     } 
-   
-
+    .second-section{
+        display: none;
+    }
+   .inf0-jeep{
+    font-size: 14px;
+   }
+    .grey-info{
+    font-size: 10px;
+  }
+ 
 }
 /* End Mobile View */
 
 /* Tablet View */
-@media only screen and (min-width: 427px) and (max-width:768px) {
+/* @media only screen and (min-width: 427px) and (max-width:768px)  */
+@media only screen and (min-width: 768px) {
     .nav-link{
         padding: 20px 10px;
     }
@@ -413,44 +510,83 @@ margin-top: 10px;
         display:none;
     }
 
-    .jeep-slide-one{
-        background-image: url("jeep-slide-mobile-two.jpg");
-        width: 100%;
-        position: absolute;
-        top: 54px;
-        height: 47.5vh;
-        background-size: contain
-    } 
+    .about-us{
+        /* flex:1; */
+        min-width: 45%;
+    }
+   .hero-panel{
+    top:5%;
+    left:50%;
+    transform: translateX(-50%);
+    margin: 0px 35px;
+}
 
+
+   .big-jeep{
+    display: none;
+      }
+
+  .second-section{
+      width: 100%;
+    
+  }
+  
+  .inf0-jeep{
+      font-size: 18px;
+  }
+  .grey-info{
+    font-size: 12px;
+  }
+ .flex-item .sub-header{
+      font-size: 10px;
+  }
+
+
+  .jeep-slide-one{
+    background-image: url("Phablet.jpg.image.1400.jpg");
+    width: 100%;
+    position:relative;
+} 
+  /* .flex-item{
+      flex: none;
+  } */
 }
 
 /* End Tablet View */
 
 
 /* Lg Tablet */
-@media only screen and (min-width: 768px) and (max-width:1024px) {
+
+@media only screen and (min-width: 992px){
     .logo-cont{
         flex:1;
         padding-left: 15px;
     }
    
-
-    .jeep-slide-one{
-        background-image: url("jeep-slide-mobile-two.jpg");
-        width: 100%;
-        position: absolute;
-        top: 54px;
-        height: 47.5vh;
-        background-size: contain
-    } 
-
+.nav-menu{
+    height: 80px;
 }
+    /* .jeep-slide-one{
+        background-image: url("Phablet.jpg.image.1400.jpg");
+        width: 100%;
+        position: relative;
+        
+       
+    }  */
+    
 
+/* 
+     .jeep-slide-one{
+        background-image: url("Tablet.jpg.image.2000.jpg");
+        width: 100%;
+        position:relative;
+    }    */
+    
 /* End Lg Tablet */
 
 /* Desktop View */
 
-/* @media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
     .logo-cont{
         padding-left: 15px;
     }
@@ -495,6 +631,25 @@ margin-top: 10px;
     .mobile-slide {
         display: none;
     }
-} */
+    .hero-panel{
+        top:5%;
+        left:50%;
+        transform: translateX(-100%);
+        margin: 0px 200px;
+    }
+    /* .jeep-slide-one{
+        background-image: url("Desktop.jpg.image.2880.jpg");
+        width: 100%;
+        position:relative;
+    }    */
 
-/* End Desktop View */
+    .inf0-jeep{
+        font-size: 20px;
+    }
+
+    .grey-info{
+        font-size: 14px;
+     
+    }
+}
+}
