@@ -91,6 +91,8 @@ div a i{
 } 
 
 .hero-panel{
+    display: flex;
+    flex-direction: column;
     background-color:rgba(0,0,0,.5);
     position: absolute;
     padding: 15px;
@@ -201,7 +203,7 @@ div a i{
     background-color: #d1d1d1;
     display: flex;
     flex-direction: column;
-    padding: 20px 20px;
+    /* padding: 20px 20px; */
     width: 100%;
 }
 .flex-item3{
@@ -243,7 +245,7 @@ div a i{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 20px 20px;
+    /* padding: 20px 20px; */
    }
    .inf0-jeep1{
     text-align: left;
@@ -253,7 +255,7 @@ div a i{
        background-color: #d1d1d1;
        /* display: flex; */
        width: 100%;
-       padding: 45px 20px;
+       /* padding: 45px 20px; */
        justify-content: center;
        text-align: center;
    }
@@ -270,7 +272,7 @@ h1{
      
 .button3{
 background-color: rgb(255,186,0);
-padding: 12px 63px;
+padding: 12px 41px;
 color: black;
 text-align: center;
 text-decoration: none;
@@ -300,7 +302,7 @@ margin-top: 10px;
 
   .six-container{
       background-color: #212121;
-      padding: 20px;
+      /* padding: 20px; */
       width: 100%;
   }
 .info-about-us{
@@ -309,14 +311,12 @@ margin-top: 10px;
  
 }
 .about-us{
-    min-width: 50%;
+    display: flex;
     margin: 10px 0px;
     color: #bfbfbf;
     align-items:center;
     
    }
-
-   
 
 #globe{
     margin-right:10px;
@@ -324,7 +324,6 @@ margin-top: 10px;
  
    #globe::before {
         content: "\f57d";
-        margin-left: 56px;
     } 
     
     .search-info{
@@ -334,7 +333,6 @@ margin-top: 10px;
         background-color: snow;
         align-items:center;
         border-radius: 3px;
-        margin:40px 0px;
         padding-left: 7px;
         
     }
@@ -363,7 +361,7 @@ margin-top: 10px;
 .footer{
     background-color: black;
     color: white;
-    padding: 40px 25px;
+    /* padding: 40px 25px; */
     width: 100%
    
 }
@@ -484,6 +482,17 @@ span{
     .grey-info{
     font-size: 10px;
   }
+
+  .hero-panel{
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0px;
+}
+
+.about-us{
+    width: 50%;
+   }
  
 }
 /* End Mobile View */
@@ -511,9 +520,10 @@ span{
     }
 
     .about-us{
-        /* flex:1; */
-        min-width: 45%;
+        width: 33.3%;
+        
     }
+
    .hero-panel{
     top:5%;
     left:50%;
@@ -550,6 +560,20 @@ span{
   /* .flex-item{
       flex: none;
   } */
+  .third-container{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+
+  .tablet-card-first-row {
+    width: 45%;
+    margin-top:25px;
+    }
+
+    .tablet-card-second-row {
+        width: 94%;
+    }
 }
 
 /* End Tablet View */
@@ -565,6 +589,12 @@ span{
    
 .nav-menu{
     height: 80px;
+}
+
+.about-us {
+    width: initial;
+    padding-left: .78125%;
+    padding-right: .78125%;
 }
     /* .jeep-slide-one{
         background-image: url("Phablet.jpg.image.1400.jpg");
